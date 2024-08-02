@@ -4,7 +4,7 @@ export function MostrarHTML() {
   let footer = (document.getElementById("Footer").innerHTML = CrearFooter());
   let Noticias = (document.getElementById("Noticias").innerHTML =
     CrearTarjetaNoticias());
-  let parrafo = (document.getElementById("parrafo").innerHTML = CrearParrafo);
+  let parrafo = (document.getElementById("parrafo").innerHTML = CrearParrafo());
 }
 
 /* 1-Navbar */
@@ -69,7 +69,7 @@ function CrearTarjetaNoticias() {
 }
 
 function CrearParrafo() {
-  let texto = `Esto es un ejemplo`;
+  let texto = "Esto es un ejemplo";
   let html = `<p> $(texto)</p>`;
 
   return html;
