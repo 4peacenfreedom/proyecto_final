@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", (ev) => {
 });
 
 function MostrarDatosConfiguracion() {
-  // Truco !Fetch
+  // Truco !Fetch url
 
   let url;
   fetch("url")
