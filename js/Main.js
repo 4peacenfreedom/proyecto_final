@@ -9,7 +9,7 @@ function MostrarDatosConfiguracion() {
   // Truco !Fetch url
 
   let url;
-  fetch("url")
+  fetch("/js/Configuraciones.json")
     .then((response) => response.json())
 
     .then((data) => console.log(data));
