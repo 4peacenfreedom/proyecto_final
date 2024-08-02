@@ -1,10 +1,10 @@
 /* 0- */
+
 export function MostrarHTML() {
   let navbar = (document.getElementById("Navbar").innerHTML = CrearNavbar());
   let footer = (document.getElementById("Footer").innerHTML = CrearFooter());
   let Noticias = (document.getElementById("Noticias").innerHTML =
     CrearTarjetaNoticias());
-  let parrafo = (document.getElementById("parrafo").innerHTML = CrearParrafo());
 }
 
 /* 1-Navbar */
@@ -64,13 +64,6 @@ function CrearTarjetaNoticias() {
             </div>
       </section>
       `;
-
-  return html;
-}
-
-function CrearParrafo() {
-  let texto = "Esto es un ejemplo";
-  let html = `<p> $(texto)</p>`;
 
   return html;
 }
