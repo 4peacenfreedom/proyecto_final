@@ -1,10 +1,3 @@
-/* Los componentes */
-document.addEventListener("DOMContentLoaded", (ev) => {
-  MostrarHTML();
-  MostrarDatosConfiguracion();
-  MostrarDatosPersonas();
-  MostrarDatosEnConsola();
-});
 
 export function MostrarDatosEnConsola() {
   MostrarDatosConfiguracion();
