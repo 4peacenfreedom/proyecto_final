@@ -1,9 +1,9 @@
-import { MostrarHTML } from "/js/CrearHTML.js";
+import { MostrarHTML } from "/js/Global.js";
 
-import { MostrarDatosEnConsola } from "/js/Consultarjson.js";
+import { ObtenerDatosConfiguracion } from "/js/Servicios_Config.js";
 
 /* Los componentes */
 document.addEventListener("DOMContentLoaded", (ev) => {
   MostrarHTML();
-  MostrarDatosEnConsola();
+  ObtenerDatosConfiguracion();
 });
