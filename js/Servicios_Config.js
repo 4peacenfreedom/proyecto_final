@@ -4,7 +4,7 @@ export const ObtenerDatosConfiguracion = async () => {
     const response = await fetch(url);
     if (response.status == "200") {
       const data = await response.json();
-      console.log(data);
+      console.table(data);
     } else {
       console.log("Error al consultar el API" + response.status);
     }
