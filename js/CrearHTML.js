@@ -8,7 +8,7 @@ export function MostrarHTML() {
 }
 
 /* 1-Navbar */
-function CrearNavbar() {
+const CrearNavbar = () => {
   let html = `
        <a class="navbar-brand" href="#">
           <img src="img/1-Logo.png" alt="Logo NoticiasTecnológicas" class="navegacion-principal__marca">
@@ -32,10 +32,10 @@ function CrearNavbar() {
       `;
 
   return html;
-}
+};
 
 /* 2-Footer */
-function CrearFooter() {
+const CrearFooter = () => {
   let html = `
       <h3>Derechos de Autor de NoticiasTecnológicas</h3>
         <p>Sigue a NoticiasTecnológicas</p>
@@ -48,10 +48,10 @@ function CrearFooter() {
       `;
 
   return html;
-}
+};
 
 /* Main -Secciones 1 Noticias card*/
-function CrearTarjetaNoticias() {
+const CrearTarjetaNoticias = () => {
   let html = `
        <section class=" banner  col-lg-4 ">
             <div class="card h-100">
@@ -66,4 +66,4 @@ function CrearTarjetaNoticias() {
       `;
 
   return html;
-}
+};
