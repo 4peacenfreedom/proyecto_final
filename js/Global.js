@@ -29,6 +29,31 @@ const CrearHeroBanner = () => {
   return html;
 };
 
+//Test img change
+
+// Selecciona el header por su ID
+const heroBanner = document.getElementById("heroBanner");
+
+// Obtiene la URL actual
+const currentPage = window.location.pathname;
+
+// Define un objeto con las rutas y las imágenes correspondientes
+const images = {
+  "/Inicio.html": "url('/img/hero-inicio.jpg')",
+  "/Registro.html": "url('/img/hero-registro.jpg')",
+  "/Tabla-Rick.html": "url('/img/hero-table.jpg')",
+  "/Tabla-Usuarios.html": "url('/img/hero-users.jpg')",
+};
+
+// Verifica si la página actual tiene una imagen asignada
+if (images[currentPage]) {
+  // Cambia el background-image del header
+  heroBanner.style.backgroundImage = images[currentPage];
+} else {
+  // Opción por defecto si la página no está en el objeto
+  heroBanner.style.backgroundImage = "url('/img/1-Header.jpg')";
+}
+
 //1-Navbar
 
 const CrearNavbar = (data) => {
