@@ -1,7 +1,7 @@
 import { ObtenerDatosApiRick } from "/js/Servicios_Config.js";
 
 //Variables Globales
-let respuesta = [];
+// let respuesta = [];
 
 document.addEventListener("DOMContentLoaded", (ev) => {
   MostrarCard();
@@ -22,9 +22,9 @@ const CrearTarjetaNoticias = (Datos) => {
   Datos.forEach((element) => {
     html += `
 
-     <section class=" banner  col-lg-4 ">
+     <section class="tarjetas mt-4 col-lg-4 ">
           <div class="card h-100">
-            <img src="${element.image}" class="card-img-top" alt="...">
+            <img src="${element.image}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-title">${element.name}</h5>
               <p class="card-text">${element.id}</p>

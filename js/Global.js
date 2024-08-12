@@ -7,10 +7,26 @@ export const MostrarHTML = async () => {
     let navbar = (document.getElementById("Navbar").innerHTML = CrearNavbar(
       Datos.navbar
     ));
+    let herobanner = (document.getElementById("heroBanner").innerHTML =
+      CrearHeroBanner(Datos.herobanner));
     let footer = (document.getElementById("Footer").innerHTML = CrearFooter(
       Datos.footer
     ));
   }
+};
+
+// 0-Hero banner
+
+const CrearHeroBanner = () => {
+  let html = `
+    <h2>¡Grandes Noticias hoy!</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolor laudantium rerum, excepturi est praesentium
+        natus qui? Tempora rerum, numquam inventore eligendi in, nostrum reprehenderit, eum cumque fugit eaque
+        similique!</p>
+      <a href="#" class="boton">Regístrate <i class="fas fa-chevron-right"></i></a>
+        `;
+
+  return html;
 };
 
 //1-Navbar
@@ -50,7 +66,7 @@ const CrearFooter = (data) => {
       <ul class="list-inline enlaces-pie" id="ListaFooter">
           `;
   data.forEach((element) => {
-    html += `<a href="${element.enlace}" class="mx-2"><i class="${element.claseDeCss}">${element.nombre}</i></a>`;
+    html += `<a href="${element.enlace}" class="mx-2"><i class="${element.claseDeCss}"> ${element.nombre}</i></a>`;
   });
 
   html += ` </ul>`;
